@@ -23,12 +23,14 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   useEffect(() => {
     const root = window.document.documentElement;
+    console.log('Theme changed to:', theme);
     root.classList.remove('light', 'dark');
     root.classList.add(theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
+    console.log('Toggling theme from:', theme);
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
