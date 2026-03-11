@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import { PERSONAL_INFO } from './constants';
 import { ThemeProvider } from './ThemeContext';
 
+
 const Footer: React.FC = () => (
   <footer className="py-12 px-6 border-t border-zinc-200 dark:border-zinc-900 bg-zinc-50 dark:bg-zinc-950 text-center transition-colors duration-300">
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
